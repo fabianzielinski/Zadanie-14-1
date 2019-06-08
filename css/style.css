@@ -1,0 +1,3 @@
+.carousel-cell { width: 100%; /* full width */ height: 50%; /* height of carousel */ min-height: 250px; margin-right: 10px; display: -ms-flexbox; display: flex; -ms-flex-pack: center; justify-content: center; -ms-flex-align: center; align-items: center; z-index: 0; background-position: center; background-size: cover; }
+
+.container { display: block; width: 1200px; margin: 30px; padding: 30px; z-index: 3; color: #fff; font-size: 20px; font-weight: 700; text-align: center; background-color: rgba(0, 0, 255, 0.2); }
