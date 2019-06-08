@@ -39,7 +39,9 @@
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	flex-wrap: wrap;
 	.btn {
+		margin: 5px;
 		a {
 			text-decoration: none;
 		}

@@ -4,6 +4,8 @@
 
 .progress-bar { z-index: 4; background-color: black; padding: 10px; }
 
-.btn-container { background-color: rgba(230, 230, 255, 0.2); padding: 20px; z-index: 0; display: -ms-flexbox; display: flex; -ms-flex-pack: center; justify-content: center; -ms-flex-align: center; align-items: center; }
+.btn-container { background-color: rgba(230, 230, 255, 0.2); padding: 20px; z-index: 0; display: -ms-flexbox; display: flex; -ms-flex-pack: center; justify-content: center; -ms-flex-align: center; align-items: center; -ms-flex-wrap: wrap; flex-wrap: wrap; }
+
+.btn-container .btn { margin: 5px; }
 
 .btn-container .btn a { text-decoration: none; }
