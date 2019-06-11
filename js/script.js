@@ -17,7 +17,6 @@ var progressBar = document.querySelector('.progress-bar')
  var restart = document.querySelector(".restart");
 
  restart.addEventListener('click', function () {
-     var flkty = new Flickity('.main-carousel');
      flkty.select(0);
  })
 
