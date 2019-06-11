@@ -21,25 +21,24 @@
 	font-size: 20px;
 	font-weight: 700;
 	text-align: center;
-	background-color: rgba(0, 0, 255, 0.2);
+	background-color: rgba(0, 0, 255, .2);
 }
 
 .progress-bar {
 	z-index: 4;
-	// height: 20px;
 	background-color: black;
 	padding: 10px;
 }
 
 .btn-container {
-	background-color: rgba(230, 230, 255, 0.2);
+	background-color: rgba(230, 230, 255, .2);
 	padding: 20px;
-	// margin: 20px 0;
 	z-index: 0;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	flex-wrap: wrap;
+	
 	.btn {
 		margin: 5px;
 		a {
