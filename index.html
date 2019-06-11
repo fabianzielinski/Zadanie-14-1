@@ -14,6 +14,8 @@
 
 		<div class="progress-bar"></div>
 
+		<div id="map"></div>
+
 		<script id="template-product-item" type="x-tmpl-mustache">
 		
 			<div class="carousel-cell" id="{{number}}" style="background-image: url({{ image }}) ">
@@ -28,37 +30,43 @@
 					image: 'https://images.pexels.com/photos/2403251/pexels-photo-2403251.jpeg', 
 					title: 'carousel-cell1',
 					number: 'carousel-cell1',
-					description:  " <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Bibendum enim facilisis gravida neque convallis a cras semper. Eu mi bibendum neque egestas congue quisque egestas diam in. </p> "
+					description:  " <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Bibendum enim facilisis gravida neque convallis a cras semper. Eu mi bibendum neque egestas congue quisque egestas diam in. </p> ",
+					coords: {lat: 25.305720, lng: 51.514367}
 				},
 				{
 					image: 'https://images.pexels.com/photos/460683/pexels-photo-460683.jpeg', 
 					title: 'carousel-cell2',
 					number: 'carousel-cell2',
-					description: " <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Bibendum enim facilisis gravida neque convallis a cras semper. Eu mi bibendum neque egestas congue quisque egestas diam in. </p> "
+					description: " <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Bibendum enim facilisis gravida neque convallis a cras semper. Eu mi bibendum neque egestas congue quisque egestas diam in. </p> ",
+					coords: {lat: 25.143442, lng: 55.187914} 
 				},
 				{
 					image: 'https://images.pexels.com/photos/2404370/pexels-photo-2404370.jpeg', 
 					title: 'carousel-cell3',
 					number: 'carousel-cell3',
-					description: " <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Bibendum enim facilisis gravida neque convallis a cras semper. Eu mi bibendum neque egestas congue quisque egestas diam in. </p> "
+					description: " <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Bibendum enim facilisis gravida neque convallis a cras semper. Eu mi bibendum neque egestas congue quisque egestas diam in. </p> ",
+					coords: {lat: -19.497865, lng: 155.812304} 
 				},
 				{
 					image: 'https://images.pexels.com/photos/2419009/pexels-photo-2419009.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940', 
 					title: 'carousel-cell4',
 					number: 'carousel-cell4',
-					description: " <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Bibendum enim facilisis gravida neque convallis a cras semper. Eu mi bibendum neque egestas congue quisque egestas diam in. </p> "
+					description: " <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Bibendum enim facilisis gravida neque convallis a cras semper. Eu mi bibendum neque egestas congue quisque egestas diam in. </p> ",
+					coords: {lat: 64.402050, lng: 10.321508} 
 				},
 				{
 					image: 'https://images.pexels.com/photos/2308671/pexels-photo-2308671.jpeg?auto=format%2Ccompress&cs=tinysrgb&dpr=2&h=650&w=940', 
 					title: 'carousel-cell5',
 					number: 'carousel-cell5',
-					description: " <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Bibendum enim facilisis gravida neque convallis a cras semper. Eu mi bibendum neque egestas congue quisque egestas diam in. </p> "
+					description: " <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Bibendum enim facilisis gravida neque convallis a cras semper. Eu mi bibendum neque egestas congue quisque egestas diam in. </p> ",
+					coords: {lat: 45.147873, lng: -72.770640}
 				},
 				{
 					image: 'https://images.pexels.com/photos/371916/pexels-photo-371916.jpeg?auto=format%2Ccompress&cs=tinysrgb&dpr=2&h=650&w=940', 
 					title: 'carousel-cell6',
 					number: 'carousel-cell6',
-					description: " <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Bibendum enim facilisis gravida neque convallis a cras semper. Eu mi bibendum neque egestas congue quisque egestas diam in. </p> "
+					description: " <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Bibendum enim facilisis gravida neque convallis a cras semper. Eu mi bibendum neque egestas congue quisque egestas diam in. </p> ",
+					coords: {lat: 23.040045, lng: 113.342860}
 				},
 			];
 		</script>
@@ -67,4 +75,5 @@
     	<script src="vendor/hash.js"></script>
     	<script src="vendor/mustache.js"></script>
     	<script type="text/javascript" src="js/script.js"></script>
+    	<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA0In0iZWoyUs7BicbQlOP0RN_2XZ8BC8w&callback=initMap"> </script>
     </body>

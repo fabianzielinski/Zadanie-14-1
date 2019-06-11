@@ -30,3 +30,20 @@ var progressBar = document.querySelector('.progress-bar')
     progress = Math.max(0, Math.min(1, progress));
     progressBar.style.width = progress * 100 + '%';
  });
+
+// ---- MAPA ---- 
+
+window.initMap = function() {
+  var map = new google.maps.Map(document.getElementById('map'), {
+    zoom: 4,
+    center: carouselData[0].coords
+  });
+  
+  for(var i = 0; i < carouselData.length; i++) {
+    var marker = new google.maps.Marker({
+      position: carouselData[i].coords,
+      map: map
+    });
+  }
+
+};

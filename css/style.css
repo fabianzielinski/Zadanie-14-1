@@ -9,3 +9,5 @@
 .btn-container .btn { margin: 5px; }
 
 .btn-container .btn a { text-decoration: none; }
+
+#map { width: 100%; height: calc(50vh - 10px); background-color: grey; }
