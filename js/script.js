@@ -48,7 +48,9 @@ window.initMap = function() {
       position: carouselData[i].coords,
       map: map
     });
-    marker[i].addListener('click', createfunc(i));
+    marker.addListener('click', function(){
+    	flkty.select(i);
+    });
   }
 
   flkty.on('change', function(index) {
