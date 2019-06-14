@@ -39,7 +39,7 @@ window.initMap = function() {
     center: carouselData[0].coords
   });
   
-  for(var i = 0; i < carouselData.length; i++) {
+  for (var i = 0; i < carouselData.length; i++) {
     var marker = new google.maps.Marker({
       position: carouselData[i].coords,
       map: map
