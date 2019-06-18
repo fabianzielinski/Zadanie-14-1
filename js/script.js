@@ -38,15 +38,11 @@ window.initMap = function() {
     zoom: 4,
     center: carouselData[0].coords
   });
-  
-  function createfunc(i) {
-	return function() { flkty.select(i); };  	
-  }
 
   for (var i = 0; i < carouselData.length; i++) {
     var marker = new google.maps.Marker({
-      position: carouselData[i].coords,
-      map: map
+    	position: carouselData[i].coords,
+    	map: map
     });
     marker.addListener('click', function(){
     	flkty.select(i);
@@ -55,7 +51,7 @@ window.initMap = function() {
 
   flkty.on('change', function(index) {
   	map.panTo(carouselData[index].coords);
-    map.setZoom(8);
+  	map.setZoom(8);
   });
 
 };
