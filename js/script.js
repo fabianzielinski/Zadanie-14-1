@@ -1,5 +1,5 @@
 
-// --- MUSTACHE --- 
+// --- Mustache --- 
 
 var listItems = '';
 var templateItem = document.getElementById('template-product-item').innerHTML;
@@ -15,7 +15,7 @@ results.insertAdjacentHTML('beforeend', listItems);
 
 var elem = document.querySelector('.main-carousel');
 var flkty = new Flickity( elem, {
-  // ---- options ----
+  // ---- Options ----
 	cellAlign: 'left',
 	contain: true,
 	pageDots: false,
@@ -31,7 +31,7 @@ var progressBar = document.querySelector('.progress-bar')
     progressBar.style.width = progress * 100 + '%';
  });
 
-// ---- MAPA ---- 
+// ---- Map ---- 
 
 window.initMap = function() {
   var map = new google.maps.Map(document.getElementById('map'), {
